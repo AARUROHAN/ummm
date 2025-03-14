@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+h1 {
+    font-size: 3rem;
+    font-family: 'Great Vibes', cursive;
+    animation: fadeIn 2s ease-in-out;
+}
+.button-container button {
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 10px;
+}
+.button-container button:hover {
+    background: darkred;
+}
+.section {
+    display: none;
+    padding: 50px;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    animation: fadeIn 1s ease-in-out;
+}
+.letter {
+    font-size: 1.5rem;
+    font-family: 'Great Vibes', cursive;
+    white-space: pre-wrap;
+    text-align: left;
+    margin: auto;
+    max-width: 800px;
+    line-height: 2em;
+    animation: typing 3s steps(40) forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
